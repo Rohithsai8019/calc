@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="C:\Users\bbtsu\OneDrive\Desktop\my folder\calc.css">
+</head>
+<body>
+    <div class="calc">
+        <input type="text" name=display id="display">
+            <div>
+                <button onclick="display.value=''">AC</button>
+                <button onclick="display.value=display.value.toString().slice(0,-1)">DEL</button>
+                <button onclick="display.value=(display.value)/100">%</button>
+                <button onclick="display.value= eval(display.value)" id="equal">=</button>
+            </div>
+            <div>
+
+                <button onclick="display.value+='7'">7</button>
+                <button onclick="display.value+='8'">8</button>
+                <button onclick="display.value+='9'">9</button>
+                <button onclick="display.value+='*'">*</button>
+
+            </div>
+            <div>
+                <button onclick="display.value+='4'">4</button>
+                <button onclick="display.value+='5'">5</button>
+                <button onclick="display.value+='6'">6</button>
+                <button onclick="display.value+='+'">+</button>
+
+            </div>
+            <div>
+                <button onclick="display.value+='1'">1</button>
+                <button onclick="display.value+='2'">2</button>
+                <button onclick="display.value+='3'">3</button>
+                <button onclick="display.value+='-'">-</button>
+            </div>
+            <div>
+                <button onclick="display.value+='0'">0</button>
+                <button onclick="display.value+='00'">00</button>
+                <button onclick="display.value+='.'">.</button>
+                <button onclick="display.value+='/'">/</button>
+            </div>
+    </div>    
+    
+</body>
+</html>
